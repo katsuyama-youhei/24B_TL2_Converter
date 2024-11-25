@@ -22,9 +22,9 @@ int main(int argc,char* argv[])
 	assert(SUCCEEDED(hr));
 
 	// テクスチャコンバータ
-	TextureConverter textureConverter;
+	TextureConverter converter;
 	// テクスチャ変換
-	textureConverter.ConverterTextureWICToDDS(argv[kFilePath]);
+	converter.ConverterTextureWICToDDS(argv[kFilePath]);
 
 	// COM ライブラリの終了
 	CoUninitialize();
